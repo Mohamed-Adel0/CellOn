@@ -1,0 +1,752 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+a {
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  background-color: #6cbb23;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Here for Width & Height for all Section */
+.box-parent {
+  width: 100%;
+  min-height: 100vh;
+  padding: 55px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-container {
+  width: 93%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+}
+/* End for Width & Height for all Section */
+
+/* Here for Nav Bar & Menu */
+header {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+nav .box-menu {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+nav .box-menu .menu {
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.close {
+  display: none;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav .box-menu ul {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+  width: 0;
+  opacity: 0;
+  transition: 0.6s !important;
+}
+.box-container li,
+a {
+  list-style: none;
+  color: #777;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* End for Nav Bar & Menu */
+
+/* Here for Frist Parent */
+.frist-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.frist-parent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.frist-parent .card {
+  width: 500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.frist-parent .card .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.frist-parent .card img {
+  height: 100%;
+  object-fit: fill;
+}
+.frist-parent .card h1 {
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 1.2em;
+  color: #2222228a;
+}
+.frist-parent .card h4 {
+  font-size: 13px;
+  font-weight: 200;
+}
+.link {
+  height: 11%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.link a {
+  background-color: #6cbb23;
+  padding: 10px 22px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+/* End for Frist Parent */
+
+/* Here for 2nd Parent */
+.two-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.two-parent .container {
+  width: 100%;
+  height: 100%;
+}
+.two-parent .card {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.two-parent .bg {
+  position: absolute;
+  inset: 0;
+  background-color: #6cbb238e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two-parent .bg .button {
+  display: flex;
+  justify-content: center;
+  color: #222222;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #fff;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running
+    pulse;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+.two-parent .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End for 2nd Parent */
+
+/* Here for 3rd Parent */
+.three-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.three-parent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.three-parent .card:nth-child(1) {
+  width: 650px;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.three-parent .card h1 {
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 1.2em;
+  color: #2222228a;
+}
+.three-parent .card p {
+  color: #22222293;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.three-parent .card:nth-child(2) {
+  width: 450px;
+  height: 550px;
+}
+/* End for 3rd Parent */
+
+/* Here for 4th Parent */
+.four-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.four-parent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.four-parent .card {
+  width: 350px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: #d6d5d591 -2px -2px 19px 0px;
+}
+.four-parent .icon {
+  width: 85%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.four-parent .icon button {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  border: none;
+  color: #6cbb23;
+}
+.four-parent .text {
+  width: 85%;
+  height: 45%;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.four-parent .text h3 {
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+.four-parent .text p {
+  font-family: sans-serif;
+  width: 95%;
+  color: #222222c0;
+}
+/* End for 4th Parent */
+
+/* Here for 5th Parent */
+.five-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.five-parent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.five-parent .card {
+  width: 80%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-shadow: #d6d5d591 -2px -2px 19px 0px;
+  padding: 20px 0;
+}
+.five-parent .text {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.five-parent .text h1 {
+  font-size: 20px;
+  font-family: serif;
+}
+.five-parent h4 {
+  font-size: 16px;
+  color: #2828289c;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.five-parent .numb {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.five-parent .numb p {
+  font-size: 45px;
+}
+/* End for 5th Parent */
+
+/* Here for 6th Parent */
+.six-parent {
+  width: 100%;
+  min-height: 100vh;
+}
+.six-parent form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.six-parent .bg {
+  position: absolute;
+  inset: 0;
+  background-image: url(../Picture/contact-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5 !important;
+}
+.six-parent .color {
+  width: 100%;
+  height: 100%;
+  background-color: #6cbb239d;
+}
+.six-parent .bg img {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.six-parent .text {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+}
+.six-parent .text h1 {
+  font-weight: 100;
+}
+.six-parent .text p {
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.six-parent .dev-input {
+  width: 80%;
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.six-parent .dev-input input {
+  width: 49%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 15px;
+}
+textarea {
+  width: 80%;
+  height: 188px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.six-parent .btn {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.btn button {
+  background: #fff;
+  color: #6cbb23;
+  padding: 13px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+  border: none;
+}
+/* End for 6th Parent */
+
+/* Here for 7th Parent */
+.seven-parent {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seven-parent .container {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.seven-parent .card {
+  width: 180px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.seven-parent .text {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.seven-parent h3 {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+}
+.seven-parent p {
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.seven-parent a {
+  font-weight: 200;
+}
+/* End for 7th Parent */
+
+/* Here Style for Footer */
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .icons {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 5px;
+}
+footer .icons a {
+  font-size: 20px;
+  color: #282828b6;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+footer h3 {
+  font-size: 15px;
+  color: #2828288c;
+  font-weight: 300;
+}
+footer a {
+  color: #6cbb23;
+  font-size: 14px;
+  font-weight: 300;
+}
+/* End Style for Footer */
+/* Here for style to on button to scroll */
+.top {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 10;
+  display: none;
+}
+.top button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #6cbb23;
+  color: #fff;
+  cursor: pointer;
+}
+/* End for style to on button to scroll */
+/* Here for media Query */
+@media (max-width: 1086px) {
+  .frist-parent .card {
+    width: 400px;
+  }
+  .frist-parent .card h1 {
+    font-size: 37px;
+  }
+  .three-parent .card:nth-child(1) {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 870px) {
+  .frist-parent .card {
+    width: 340px;
+  }
+  .frist-parent .card h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  nav .box-menu {
+    width: 70%;
+  }
+  .frist-parent .card {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .frist-parent .card .link {
+    justify-content: center;
+  }
+  .three-parent .container {
+    flex-wrap: wrap;
+  }
+  .three-parent .card:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+  }
+  .three-parent .card:nth-child(2) {
+    width: 50%;
+  }
+  .three-parent .link {
+    justify-content: center;
+    align-items: center;
+  }
+  .four-parent .card {
+    width: 45%;
+  }
+  .five-parent .card {
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .five-parent .text {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .six-parent .dev-input input {
+    width: 100%;
+    height: 50px;
+  }
+  .six-parent .dev-input {
+    height: auto;
+    gap: 15px;
+  }
+  .six-parent .btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  nav .box-menu {
+    width: 100%;
+  }
+  .frist-parent .card:nth-child(1) {
+    width: 100%;
+  }
+  .frist-parent .card img {
+    width: auto;
+    object-fit: cover;
+  }
+  .four-parent .card {
+    width: 90%;
+  }
+  .six-parent .text {
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  nav .box-menu {
+    width: 70%;
+  }
+  nav ul {
+    gap: 5px !important;
+    justify-content: flex-start;
+  }
+  nav .box-menu a {
+    font-size: 8px !important;
+  }
+  .three-parent .card:nth-child(2) {
+    width: auto;
+  }
+}
+/* Here For Hover */
+a:hover {
+  color: #6cbb23;
+  transform: 0.3s ease;
+}
+footer .icons a:hover {
+  transition: 0.6s;
+  transform: rotate(360deg) scale(1.3);
+  color: #6cbb23;
+}
+.link a:hover {
+  border: 1px solid #6cbb23;
+  color: #6cbb23;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.two-parent .bg .button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+.btn button:hover {
+  background-color: #6cbb23;
+  color: #fff;
+  transition: 0.3s;
+  padding: 13px 30px;
+}
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
+  }
+}
+.four-parent .card:hover button {
+  background-color: #6cbb23 !important;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+/* Here for Style for JavaScript to call them */
+.showLinks {
+  width: 80% !important;
+  transition: 0.6s !important;
+  opacity: 1 !important;
+}
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.black {
+  color: #222222;
+}
+.green {
+  color: #6cbb23;
+}
+.white {
+  color: #fff;
+  font-weight: 800;
+}
